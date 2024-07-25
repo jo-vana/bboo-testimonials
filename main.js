@@ -19,11 +19,11 @@ $(document).ready(function(){
         {
           breakpoint: 700,
           settings: {
-            slidesToShow: 2
+            slidesToShow: 1
           }
         },
         {
-          breakpoint: 420,
+          breakpoint: 320,
           settings: {
             slidesToShow: 1
           }
