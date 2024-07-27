@@ -8,9 +8,10 @@ $(document).ready(function(){
       infinite: true,
       cssEase: 'linear',
       speed: 1000,
-      mobileFirst:true,
+      // mobileFirst:true,
       centerMode: true,
-     centerPadding: '0',
+      centerPadding: '0px',
+      useCSS: true,
       responsive: [
         {
           breakpoint: 1025,
@@ -40,7 +41,7 @@ $(document).ready(function(){
       infinite: true,
       cssEase: 'linear',
       speed: 1000,
-      mobileFirst:true,
+      // mobileFirst:true,
       responsive: [
         {
           breakpoint: 1025,
