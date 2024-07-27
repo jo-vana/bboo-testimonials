@@ -94,7 +94,7 @@
             z-index: 3;
             transition: all .25s;
             text-transform: uppercase;
-            color: #fff !important;
+            color: #fff !important; /* TO DO: Add important! */
             font-size: 16px;
             background-color: #b2dbb8;
             padding: 10px 20px;
@@ -111,12 +111,14 @@
             color: #fff;
         }
         .testimonial-slide  .owl-slide {
-            display: block;
-            max-width: 730px;
+            display: flex;
+            align-items: center;
+            max-width: 560px;
+            min-height: 450px;
             background-color: #95c29c;
             padding: 30px;
             border-radius: 56px;
-            margin: 0 40px;
+            margin: 0 auto;
         }
         .testimonial-slide  .owl-slide p {
             font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (2200 - 320)));
@@ -125,7 +127,7 @@
             max-width: 960px;
             margin: 0 auto;
             display: block;
-            max-height: 320px;
+            /* max-height: 320px;  TO DO: removing*/
             overflow: hidden;
         }
         .testimonial-slider-section ul {
@@ -227,11 +229,12 @@
             }
         }
         @media screen and (max-width: 1025px) {
-            .testimonial-slide  .owl-slide {
-                max-width: none;
-            }
+            
         }
         @media screen and (max-width: 820px) {
+            .testimonial-slide  .owl-slide {
+                max-width: 600px;
+            }
             .blog-side-content ul {
                 width: 100%;
                 display: flex;
@@ -246,6 +249,9 @@
         @media screen and (max-width: 470px) {
             .blog-side-content ul li {
                 width: 100%; 
+            }
+            .testimonial-slide  .owl-slide {
+                max-width: 320px;
             }
         }
     </style>
@@ -271,10 +277,10 @@
                             <!-- slide 01 -->
                             <li class="testimonial-slide">
                                 <!-- Testimonial item -->
-                                <div class="owl-slide">
-                                    <p>„Imam 46 godina i vec 45 godina imam alergiju na sunce.
+                                <div class="owl-slide"> <!-- TO DO: 612 max num. of characters! -->
+                                    <p>„„Imam 46 godina i vec 45 godina imam alergiju na sunce.
                                         Nekada sam isla na more sa torbom punom lekova i krema (neke od njih su bile kortikosteroidi), zatim raznih gelova za hladenje, mleka, krema i masti. Torba je bila teza od one sa odecom. Sada: hvala vam neizmerno sto ste moju torbu smanjili na malu torbicu i $to ste moju alergiju na sunce pretvorili u proslost! Nema vise zategnute koze, ervenila ili plikova, a takode stedim novac na ranije neefikasne lekove i kozmetiku. Postoji mogo primera gde sam pomogla deci sa ispucalim usnama i ekcemima uz pomoc Tamanu
-                                        kreme, ali sam samo opisala soje iskustvo i..."</p>
+                                        kreme, ali sam samo opisala soje iskustvo i srecu."</p>
                                 </div>
                             </li>
                             <li class="testimonial-slide">
@@ -289,8 +295,7 @@
                                 <!-- Testimonial item -->
                                 <div class="owl-slide">
                                     <p>„Imam 46 godina i vec 45 godina imam alergiju na sunce.
-                                        Nekada sam isla na more sa torbom punom lekova i krema (neke od njih su bile kortikosteroidi), zatim raznih gelova za hladenje, mleka, krema i masti. Torba je bila teza od one sa odecom. Sada: hvala vam neizmerno sto ste moju torbu smanjili na malu torbicu i $to ste moju alergiju na sunce pretvorili u proslost! Nema vise zategnute koze, ervenila ili plikova, a takode stedim novac na ranije neefikasne lekove i kozmetiku. Postoji mogo primera gde sam pomogla deci sa ispucalim usnama i ekcemima uz pomoc Tamanu
-                                        kreme, ali sam samo opisala soje iskustvo i..."</p>
+                                        Nekada sam isla na more sa torbom punom lekova."</p>
                                 </div>
                             </li>
                         </ul>

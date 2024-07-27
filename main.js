@@ -9,6 +9,8 @@ $(document).ready(function(){
       cssEase: 'linear',
       speed: 1000,
       mobileFirst:true,
+      centerMode: true,
+     centerPadding: '0',
       responsive: [
         {
           breakpoint: 1025,
