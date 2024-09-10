@@ -4,7 +4,7 @@ $(document).ready(function(){
   jQuery('#testimonial-slider').slick({
       slidesToShow: 2,
       slidesToScroll: 1,
-      autoplay: false,
+      autoplay: false, //Ovde mora biti FALSE
       infinite: true,
       cssEase: 'linear',
       speed: 1000,
